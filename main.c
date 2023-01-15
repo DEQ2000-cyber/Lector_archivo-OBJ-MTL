@@ -1,16 +1,13 @@
 #include "ObjRead.h"
 int main(int argc, char const *argv[]){
 
-	argc=2;
-
 	if ( argc<2 )
 	{
 		printf("No hay un archivo obj para leer.\n");
 		return 1;
 	}
 
-	// const char *archivo = argv[1];
-	const char *archivo = "lara/lara.obj";
+	const char *archivo = argv[1];
 
 	__InitStoreFopenClose();
 	if ( !LectorObj( archivo ) )
